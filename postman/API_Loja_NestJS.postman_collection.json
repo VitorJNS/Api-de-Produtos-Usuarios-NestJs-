@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "b2309aea-85db-4bbe-bd9f-1203c9333f3a",
+		"name": "API Loja NestJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20077075"
+	},
+	"item": [
+		{
+			"name": "criar usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Virtus Pro\",\n    \"email\": \"vitorrr@email.com\",\n    \"senha\": \"123456213\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar Produtos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"virtus frifinha\",\n    \"valor\": 50,\n    \"quantidade\": 10,\n    \"descricao\": \"PC Gamer\",\n    \"caracteristicas\": [\n        {\n            \"nome\": \"Processador Ryazen 5 3400g\",\n            \"descricao\": \"4 nucles e 8 cores\"\n        },\n        {\n            \"nome\": \"Placa de video gtx 1650\",\n            \"descricao\": \"4gb\"\n        },\n        {\n            \"nome\": \"Placa mae Prime B450M\",\n            \"descricao\": \"Asus\"\n        }\n    ],\n    \"imagens\": [{\n        \"url\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.studiopc.com.br%2Fpc-gamer-rampage-amd-ryzen-5900x-32gb-ddr4-nvidia-rtx-4070-ti-12gb-ssd&psig=AOvVaw2lRisfJ4qw5-INGy0tBaVg&ust=1698360721289000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCSj-6kkoIDFQAAAAAdAAAAABAE\",\n        \"descricao\": \"PC gamer\"\n    }],\n    \"categoria\": \"eletronicos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Vitorrrr\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/usuarios/b235d80a-1787-4999-aa4a-eba8ab65fd23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"usuarios",
+						"b235d80a-1787-4999-aa4a-eba8ab65fd23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"é o virtus propotos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/produtos/c4ade97d-447d-4698-9ccf-72cf42624787",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produtos",
+						"c4ade97d-447d-4698-9ccf-72cf42624787"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"virtus Pro\",\n    \"email\": \"virtutspro@gmail.com\",\n    \"senha\": \"vitor123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Produtos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"virtus Pro\",\n    \"email\": \"virtutspro@gmail.com\",\n    \"senha\": \"vitor123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/usuarios/4a49c3cd-36ed-463e-847e-036b23551a95",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"usuarios",
+						"4a49c3cd-36ed-463e-847e-036b23551a95"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/produtos/c4ade97d-447d-4698-9ccf-72cf42624787",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produtos",
+						"c4ade97d-447d-4698-9ccf-72cf42624787"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
